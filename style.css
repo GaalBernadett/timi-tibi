@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+  margin-bottom: 1.5rem; 
+}
+
+body {
+  background-color: #fcf8f5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #39383d;
+}
+
+/* HEADER STYLE start */
+
+header {
+  background: url('https://live.staticflickr.com/65535/50162582776_98a33a9d23_o.jpg') no-repeat 70% center/cover;
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  header {
+    background: url('https://live.staticflickr.com/65535/50162582776_98a33a9d23_o.jpg') no-repeat center/cover;
+  }
+}
+
+.wedding-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wedding-text {
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
+}
+
+@media (min-width: 768px) {
+  .wedding-text {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+   .wedding-text h1 {
+    font-size: 7rem;
+  }
+}
+
+.tagline {
+  font-size: 1.35rem;
+  letter-spacing: .16rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 0.5px;
+  width: 12.515625rem;
+  margin: .7rem auto;
+}
+
+@media (min-width: 768px) {
+  .tagline {
+   text-transform: uppercase;
+  }
+}
+
+.date::before, .date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+/* SECTION STYLE start */
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h1 {
+  font-size: 5.15rem;
+  color: #d2ba87;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.location, .program, .gifts, .qa, .contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #c4a76a;
+}
+
+a:hover {
+  color: #fcf8f5;
+  transition: color .15s ease-in-out;
+}
+
+/* SECTION STYLE end */
+
+/* LOCATION STYLE start */
+
+.blurb img {
+  height: 7.5rem;
+}
+
+.blurb div {
+  font-family: 'Raleway', sans-serif;
+}
+
+.blurg h3 {
+  font-weight: 700;
+}
+
+.blurb::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+@media (min-width: 768px) {
+  .blurb {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  .blurb::after {
+    display: none;
+  }
+}
+
+/* LOCATION STYLE end */
+
+/* PGOGRAM STYLE start */
+
+.program {
+  width: 100vw;
+  text-align: left;
+  background-color: #39383d;
+  color: #d2ba87;
+}
+
+.program h2 {
+  text-align: center;
+  margin-top: 1rem; 
+}
+
+.program p {
+  font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+@media (min-width: 768px) {
+
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }
+  
+  .program p {
+    text-align: center;
+  }
+  
+  .program ul {
+    text-align: center;
+  }
+}
+
+/* PGOGRAM STYLE end */
+
+/* GIFT STYLE START */
+
+.gifts img {
+  height: 7.5rem;
+}
+
+.gifts p:last-child {
+  margin-bottom: 0;
+}
+
+/* GIFT STYLE END */
+
+/* QA start */
+
+.qa {
+  background-color: #39383d;
+  color: #d2ba87;
+  width: 100vw;
+  text-align: center;
+}
+
+.ga h2 {
+  margin-top: 1rem;
+}
+
+.qa-group p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.qa-group::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+@media (min-width: 768px) {
+
+  .qa-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .qa-group::after {
+    display: none;
+  }
+
+  .qa-group h3 {
+    text-align: left;
+  }
+
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+/* QA end */
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: #39383d;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
